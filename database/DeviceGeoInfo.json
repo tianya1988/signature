@@ -1,0 +1,30 @@
+[
+  {
+    "deviceIp": "10.1.2.159",
+    "departmentName": "部机关",
+    "city": "北京",
+    "lon": 116.3,
+    "lat": 39.3
+  },
+  {
+    "deviceIp": "172.16.17.160",
+    "departmentName": "规划院",
+    "city": "北京",
+    "lon": 116.3,
+    "lat": 39.3
+  },
+  {
+    "deviceIp": "192.168.188.205",
+    "departmentName": "公路院",
+    "city": "北京",
+    "lon": 116.3,
+    "lat": 39.3
+  },
+  {
+    "deviceIp": "192.168.3.115",
+    "departmentName": "资格中心",
+    "city": "北京",
+    "lon": 116.3,
+    "lat": 39.3
+  }
+]

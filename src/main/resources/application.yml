@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: signature
+    cnName: 签证
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/scsc_screen?autoReconnect=true&useCompression=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+#    username: root
+#    password: admin
+#    driverClassName: com.mysql.jdbc.Driver
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    suffix: .html
+
+server:
+  port: 9999
+  servlet.context-path: /
+
+#mybatis:
+#  mapperLocations: classpath*:/mapping/*.xml
+#  configuration-properties:
+#      prefix: SCSC_  #此属性暂时无用
+
+swagger:
+  enabled: true
+  title: SCREEN-API
+  description: API文档
+  base-package:  com.asap.screen.controller
+  base-path: /
+  exclude-path: /error
+  version: 1.0.0
+
+pdf.base.path: /home/jason/Desktop/signature/
+
+
+
+#freemarker静态资源配置
+#设定ftl文件路径
+spring.freemarker.tempalte-loader-path: classpath:/templates
+#关闭缓存，及时刷新，上线生产环境需要修改为true
+spring.freemarker.cache: false
+spring.freemarker.charset: UTF-8
+spring.freemarker.check-template-location: true
+spring.freemarker.content-type: text/html
+spring.freemarker.expose-request-attributes: true
+spring.freemarker.expose-session-attributes: true
+spring.freemarker.request-context-attribute: request
+spring.freemarker.suffix: .ftl
